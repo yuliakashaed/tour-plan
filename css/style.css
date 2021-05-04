@@ -1,5 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  background-color: #fff;
-  color: black;
+  font-family: 'Mulish', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
