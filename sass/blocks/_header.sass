@@ -27,6 +27,7 @@
       text-decoration: none
       text-transform: uppercase
       font-size: 14px
+      font-weight: 700
       line-height: 18px
 .logo
   width: 177px
@@ -45,7 +46,10 @@
     border: none
     font-size: 12px
     line-height: 15px
-    color: $input-text-color
+    color: $text-color
+    &::placeholder
+      color: $input-text-color
+      border: none
   &__button
     position: absolute
     top: 0
@@ -54,6 +58,7 @@
     height: 100%
     border: none
     background-color: $primary
+    cursor: pointer
 
 .user
   display: flex

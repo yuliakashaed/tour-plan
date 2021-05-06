@@ -390,6 +390,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: 700;
   line-height: 18px;
 }
 
@@ -413,7 +414,19 @@ body {
   border: none;
   font-size: 12px;
   line-height: 15px;
+  color: #333333;
+}
+.search__input::-moz-placeholder {
   color: #BDBDBD;
+  border: none;
+}
+.search__input:-ms-input-placeholder {
+  color: #BDBDBD;
+  border: none;
+}
+.search__input::placeholder {
+  color: #BDBDBD;
+  border: none;
 }
 .search__button {
   position: absolute;
@@ -423,6 +436,7 @@ body {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -478,7 +492,7 @@ body {
     width: 340px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
