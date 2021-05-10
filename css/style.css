@@ -354,7 +354,6 @@ body {
 }
 .container img {
   max-width: 100%;
-  display: block;
 }
 
 .navbar {
@@ -525,6 +524,8 @@ body {
   height: 450px;
   position: relative;
   border-radius: 8px;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 .hotel-slider__img {
   width: 100%;
