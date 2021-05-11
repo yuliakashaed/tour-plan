@@ -707,7 +707,8 @@ body {
 .map {
   width: 347px;
   height: 213px;
-  border-radius: 4px;
+  border-radius: 8px;
+  background-color: black;
 }
 
 @media (max-width: 1200px) {
