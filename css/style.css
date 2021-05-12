@@ -719,10 +719,6 @@ body {
 .newsletter {
   position: relative;
   padding: 80px 0 67px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .newsletter::before {
   content: "";
