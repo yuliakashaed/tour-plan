@@ -1106,6 +1106,11 @@ body {
   .subscribe {
     width: 100%;
   }
+
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 @media (max-width: 320px) {
   .container {
@@ -1164,8 +1169,6 @@ body {
   }
 
   .reviews__title {
-    font-size: 18px;
-    line-height: 23px;
     width: 250px;
     margin-right: auto;
     margin-left: auto;
