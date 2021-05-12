@@ -2,7 +2,8 @@
   .container
     max-width: 960px
 @media (max-width: 992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -23,6 +24,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 50px
     &-grid
       flex-direction: column
     &__slider
@@ -87,9 +89,21 @@
     width: 100%
     &__frame
       width: 100%
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      max-width: 576px
+      width: 92%
+      align-items: flex-start
 @media (max-width: 576px)
   .logo
     width: 99px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
+  .subscribe
+    width: 100%
 
 @media (max-width: 320px)
   .container
@@ -105,6 +119,7 @@
     margin-right: 15px
   .hotel
     padding-top: 20px
+    padding-bottom: 15px
     &-slider
       height: 179px
       &__button
@@ -117,3 +132,13 @@
       justify-content: space-evenly
   .map
     height: 172px
+  .newsletter
+    padding: 60px 0 85px 0
+    &-wrapper
+      max-width: 280px
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
