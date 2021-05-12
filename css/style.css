@@ -815,13 +815,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 .reviews-slider__item {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -850,7 +851,7 @@ body {
 .reviews-slider__button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-100%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -863,10 +864,10 @@ body {
 }
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 20px;
 }
 .reviews-slider__button--next {
-  right: 0;
+  right: 20px;
   background-image: url(../img/arrow-next-secondary.svg);
 }
 .reviews-slider__profile {
@@ -890,6 +891,7 @@ body {
   line-height: 15px;
   color: #EC1F46;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 .reviews-slider__date {
   font-weight: normal;
@@ -901,7 +903,7 @@ body {
   display: flex;
   flex-basis: 100%;
 }
-.reviews-slider__rating__star {
+.reviews-slider__star {
   display: block;
   margin-right: 2px;
 }
@@ -972,6 +974,24 @@ body {
 
   .map {
     width: 340px;
+  }
+
+  .reviews-slider__item {
+    max-width: 580px;
+  }
+  .reviews-slider__button {
+    transform: translateY(-50%);
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -1050,6 +1070,26 @@ body {
     width: 92%;
     align-items: flex-start;
   }
+
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -90px;
+    transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -90px;
+    transform: translate(50%, 0);
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1121,5 +1161,14 @@ body {
   .newsletter-title__strong {
     font-size: 30px;
     line-height: 38px;
+  }
+
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 45px;
   }
 }/*# sourceMappingURL=style.css.map */
