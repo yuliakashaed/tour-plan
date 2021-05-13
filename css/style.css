@@ -966,6 +966,7 @@ body {
 .card__title {
   margin-top: auto;
   margin-bottom: 18px;
+  width: 160px;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
@@ -995,6 +996,9 @@ body {
   .card {
     width: 230px;
     height: 230px;
+  }
+  .card__title--last {
+    width: 160px;
   }
 }
 @media (max-width: 992px) {
@@ -1081,6 +1085,9 @@ body {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .card__title--last {
+    width: 200px;
   }
 }
 @media (max-width: 767px) {
