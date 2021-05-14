@@ -68,6 +68,9 @@
     &__title
       &--last
         width: 200px
+  .packages
+    &-grid
+      grid-template-columns: repeat(2, 1fr)
 
 @media (max-width: 767px)
   .container
@@ -145,6 +148,27 @@
   .card
     width: 48%
     height: 255px
+  .packages
+    &__title
+      font-size: 30px
+    &-grid
+      grid-template-columns: repeat(1, 1fr)
+      grid-template-rows: repeat(3, 500px)
+      column-gap: 0
+  .package
+    &-stars
+      display: none
+    &-first
+      display: block
+      &-info
+        padding-top: 20px
+        max-width: 576px
+      &__image
+        height: 50%
+        width: 100%
+        object-fit: cover
+      &__text
+        display: none
 
 @media (max-width: 576px)
   .logo

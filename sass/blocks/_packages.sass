@@ -1,0 +1,142 @@
+.packages
+  padding-bottom: 70px
+  &__title
+    padding-bottom: 35px
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-grid
+    display: grid
+    min-height: 1000px
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 500px 500px
+    row-gap: 30px
+    column-gap: 30px
+.package
+  position: relative
+  border-radius: 8px
+  background-color: $dark
+  overflow: hidden
+  &-info
+    padding-top: 10px
+    padding-left: 31px
+    padding-right: 21px
+    &__title
+      margin-bottom: 22px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      color: $light
+  &-first
+    grid-column-start: span 2
+    display: flex
+    &__image
+      flex-basis: 50%
+      object-fit: cover
+    &__flash
+      position: absolute
+      top: 26px
+      left: -10px
+      width: 105px
+      height: 30px
+      padding: 8px 11px
+      border-radius: 4px
+      text-align: center
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+      background-color: $primary
+      color: $light
+    &-info
+      display: flex
+      flex-direction: column
+      max-width: 364px
+      padding: 47px 21px 30px 44px
+    &-footer
+      padding-top: 10px
+    &__title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      color: $light
+      margin-top: 5px
+
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      color: $light
+      margin-top: 10px
+      margin-bottom: 40px
+  &-other
+    display: flex
+    flex-direction: column
+    padding-bottom: 20px
+    &__element
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+    &__text
+      color: $light
+      font-size: 12px
+      line-height: 15px
+      margin-left: 13px
+  &-footer
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    &__price
+      display: flex
+      flex-direction: column
+      color: $light
+      font-style: normal
+      &--old
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+        margin-bottom: 5px
+      &--new
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+    &__button
+      width: 120px
+      min-height: 40px
+      border: none
+      border-radius: 4px
+      background-color: $primary
+      cursor: pointer
+      font-family: 'Nunito'
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      color: $light
+  &__image
+    object-fit: cover
+    width: 100%
+    height: 50%
+  &__flash
+    position: absolute
+    top: 26px
+    left: -10px
+    width: 70px
+    height: 18px
+    padding: 4px 9px 4px 13px
+    border-radius: 4px
+    text-align: center
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    background-color: $primary
+    color: $light
+  &-stars
+    display: flex
+    &__star
+      display: block
+      margin-right: 2px
