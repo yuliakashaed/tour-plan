@@ -9,13 +9,13 @@
     text-transform: uppercase
   &-grid
     display: grid
-    min-height: 1000px
     grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: 500px 500px
-    grid-auto-rows: 500px
+    grid-template-rows: 500px minmax(500px, 1fr)
     row-gap: 30px
     column-gap: 30px
 .package
+  display: flex
+  flex-direction: column
   position: relative
   border-radius: 8px
   background-color: $dark
@@ -24,6 +24,7 @@
     padding-top: 10px
     padding-left: 31px
     padding-right: 21px
+    padding-bottom: 15px
     &__title
       margin-bottom: 22px
       font-style: normal
@@ -34,6 +35,7 @@
   &-first
     grid-column-start: span 2
     display: flex
+    flex-direction: row
     &__image
       flex-basis: 50%
       object-fit: cover
@@ -65,6 +67,7 @@
       line-height: 23px
       color: $light
       margin-top: 5px
+
     &__text
       font-style: normal
       font-weight: normal
@@ -73,7 +76,6 @@
       color: $light
       margin-top: 10px
       margin-bottom: 40px
-      overflow: auto
   &-other
     display: flex
     flex-direction: column
@@ -96,15 +98,15 @@
       flex-direction: column
       color: $light
       font-style: normal
-    &__old-price
-      font-size: 14px
-      line-height: 18px
-      text-decoration-line: line-through
-      margin-bottom: 5px
-    &__new-price
-      font-weight: bold
-      font-size: 24px
-      line-height: 30px
+      &--old
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+        margin-bottom: 5px
+      &--new
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
     &__button
       width: 120px
       min-height: 40px
@@ -120,7 +122,7 @@
   &__image
     object-fit: cover
     width: 100%
-    height: 50%
+    height: 250px
   &__flash
     position: absolute
     top: 26px
