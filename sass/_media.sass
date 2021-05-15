@@ -155,6 +155,7 @@
       grid-template-columns: repeat(1, 1fr)
       column-gap: 0
   .package
+    grid-column: 1
     &-stars
       display: none
     &-first
@@ -184,6 +185,16 @@
       line-height: 23px
   .card
     width: 100%
+  .packages
+    &__title
+      font-size: 18px
+      padding-bottom: 20px
+  .package
+    &-first
+      &-info
+        padding-left: 15px
+    &-info
+      padding-left: 15px
 
 @media (max-width: 320px)
   .container

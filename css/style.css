@@ -808,6 +808,7 @@ body {
   color: #fff;
   margin-top: 10px;
   margin-bottom: 40px;
+  overflow: auto;
 }
 .package-other {
   display: flex;
@@ -836,14 +837,14 @@ body {
   color: #fff;
   font-style: normal;
 }
-.package-footer__price--old {
+.package-footer__old-price {
   font-size: 14px;
   line-height: 18px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   margin-bottom: 5px;
 }
-.package-footer__price--new {
+.package-footer__new-price {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -1380,6 +1381,9 @@ body {
          column-gap: 0;
   }
 
+  .package {
+    grid-column: 1;
+  }
   .package-stars {
     display: none;
   }
@@ -1423,6 +1427,18 @@ body {
 
   .card {
     width: 100%;
+  }
+
+  .packages__title {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .package-first-info {
+    padding-left: 15px;
+  }
+  .package-info {
+    padding-left: 15px;
   }
 }
 @media (max-width: 320px) {
