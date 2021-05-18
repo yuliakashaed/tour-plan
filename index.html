@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
@@ -505,7 +505,9 @@ quest" class="card__image">
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <a href="#" class="logo footer__logo">
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">All Categories</h3>
           <ul class="footer__ul">
@@ -540,9 +542,9 @@ quest" class="card__image">
         <div class="footer__social-network">
           <h3 class="footer__title  footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img src="img/facebook.svg" alt="Icon: Facebook"></a>
-            <a href="#" class="footer__link"><img src="img/youtube.svg" alt="Icon: Youtube"></a>
-            <a href="#" class="footer__link"><img src="img/instagram.svg" alt="Icon: Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__link"><img src="img/facebook.svg" alt="Icon: Facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="footer__link"><img src="img/youtube.svg" alt="Icon: Youtube"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__link"><img src="img/instagram.svg" alt="Icon: Instagram"></a>
           </div>
         </div>
         <!-- /.footer__social-network -->
@@ -574,7 +576,7 @@ quest" class="card__image">
             </div>
             <div class="footer__phones">
               Tel (business hours) : <a class="footer__phone" href="tel:2691500">269&nbsp;1500</a> <br>
-              Tel (hotline) Monday - Saturday: <a class="footer__phone" href="tel: 52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
+              Tel (hotline) Monday - Saturday: <a class="footer__phone" href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
               <br>
               Tel (hotline) Sunday: <a class="footer__phone" href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)
             </div>
@@ -584,7 +586,7 @@ quest" class="card__image">
                 <img class="footer__icon" src="img/footer-mail.svg" alt="Icon: Mail">
              </div>
               <div class="footer__emails">
-                <a class="footer__email"href="mailto: cherly.lawson@example.com">cherly.lawson@example.com</a>
+                <a class="footer__email" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
               </div>
             </li>
           </ul>
@@ -605,14 +607,21 @@ quest" class="card__image">
         <!-- /.footer__contact-form -->
       </div>
       <!-- /.footer-wrapper -->
-      <footer class="footer-additional footer__additional">
+      <div class="footer-additional footer__additional">
         <ul class="footer-additional__list">
-          <li class="footer__item footer-additional__item">Disclaimer</li>
-          <li class="footer__item footer-additional__item">Conditions of use</li>
-          <li class="footer__item footer-additional__item">Cancellation policy</li>
+          <li class="footer__item footer-additional__item">
+            <a class="footer-additional__link" href="#">Disclaimer</a>
+          </li>
+          <li class="footer__item footer-additional__item">
+            <a class="footer-additional__link" href="#">Conditions of use</a>
+          </li>
+          <li class="footer__item footer-additional__item">
+            <a class="footer-additional__link" href="#">Cancellation policy</a>
+            
+          </li>
         </ul>
         <img src="img/payment.png" alt="Payment" class="footer-additional__img">
-      </footer>
+      </div>
     </div>
     <!-- /.container -->
   </footer>
