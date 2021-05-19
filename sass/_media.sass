@@ -7,9 +7,6 @@
     &__title
       &--last
         width: 160px
-  .footer
-    &__input
-      flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -76,7 +73,7 @@
     &-grid
       grid-template-columns: repeat(2, 1fr)
   .footer
-    padding-top: 70px
+    padding-top: 35px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -93,7 +90,7 @@
         grid-column: span 4
         align-self: center
         margin-left: -53px
-        margin-top: 18px
+        margin-top: 50px
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
@@ -112,8 +109,9 @@
         grid-row: 3
         margin-top: 10px
     &-form
-      grid-column: span 5
+      grid-column: span 6
       grid-row: 4
+      width: 539px
     &__input
       flex-basis: 47%
       font-size: 12px
@@ -159,10 +157,11 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow-y: auto
     &-menu
       flex-direction: column
       padding-top: 0
-      overflow: auto
+      overflow: scroll
       max-height: 440px
       &__item
         margin-bottom: 15px
@@ -278,6 +277,8 @@
       margin-left: 15px
     &__contact-form
       grid-column: span 6
+    &__input
+      flex-basis: 100%
 
 @media (max-width: 576px)
   .logo
@@ -417,6 +418,7 @@
   .footer
     &__logo
       width: 95px
+      margin-bottom: -15px
     &__social
       &-network
         flex-direction: column
