@@ -15,7 +15,6 @@ if(isset($_POST['email'])){
     $title = "Новая подписка Tour Plan";
     $body = 'User mail: ' . $_POST['email'];
 } else {
-    // если нет, отправлена форма с телефоном и пр.
     $title = "Новое обращение Tour Plan";
     $body = "
     <h2>Новое письмо</h2>
@@ -61,4 +60,8 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+if ($email == null) {
+  header('Location: thankyou.html');
+} else {
+  header('Location: subscribe.html');
+}
