@@ -1625,6 +1625,19 @@ body {
   .footer__additional {
     margin-top: 55px;
   }
+
+  .modal-button-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    align-items: flex-start;
+  }
+  .modal__info {
+    margin-bottom: 15px;
+  }
+  .modal__dialog {
+    padding: 20px 70px 33px 70px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -1829,6 +1842,10 @@ body {
   .footer__input {
     flex-basis: 100%;
   }
+
+  .modal__dialog {
+    padding: 20px 50px 33px 50px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1925,6 +1942,10 @@ body {
   }
   .footer-additional__item {
     margin-bottom: 10px;
+  }
+
+  .modal__dialog {
+    padding: 20px 30px 33px 30px;
   }
 }
 @media (max-width: 320px) {
@@ -2061,12 +2082,6 @@ body {
   .footer__button {
     margin-bottom: 27px;
   }
-  .footer__button-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    width: auto;
-    align-items: flex-start;
-  }
   .footer-additional {
     display: flex;
     flex-wrap: wrap;
@@ -2076,5 +2091,12 @@ body {
   }
   .footer-additional__item {
     margin-right: 7px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */
