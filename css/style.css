@@ -1406,7 +1406,7 @@ body {
   top: 50%;
   left: 50%;
   max-width: 478px;
-  padding: 20px 88px 33px 88px;
+  padding: 13px 88px 33px 88px;
   background-color: #0A223D;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -1415,6 +1415,8 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
+  overflow: auto;
+  max-height: 90%;
 }
 .modal__dialog--visible {
   visibility: visible;
@@ -1845,6 +1847,7 @@ body {
 
   .modal__dialog {
     padding: 20px 50px 33px 50px;
+    width: 85%;
   }
 }
 @media (max-width: 576px) {

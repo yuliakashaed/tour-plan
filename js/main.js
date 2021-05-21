@@ -44,7 +44,6 @@ menuButton.on('click', function() {
             var modalDialog = $(".modal__dialog");
             modalOverlay.removeClass("modal__overlay--visible");
             modalDialog.removeClass("modal__dialog--visible");
-          
         }
     });
 
@@ -54,6 +53,7 @@ menuButton.on('click', function() {
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
   }
+
     function closeModal(event) {
     event.preventDefault()
     var modalOverlay = $(".modal__overlay");
