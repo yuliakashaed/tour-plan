@@ -11,9 +11,20 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 
-if(isset($_POST['email'])){
+if($email != ""){
+  if ($name == ""){
     $title = "Новая подписка Tour Plan";
     $body = 'User mail: ' . $_POST['email'];
+  } else {
+    $title = "Запрос на бронирование";
+    $body = "
+    <h2>Новое письмо</h2>
+    <b>Имя:</b> $name<br>
+    <b>Почта:</b> $email<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+"
+  ;}
 } else {
     $title = "Новое обращение Tour Plan";
     $body = "
@@ -60,8 +71,8 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if ($email == null) {
-  header('Location: thankyou.html');
-} else {
+if ($email != null && $name == null) {
   header('Location: subscribe.html');
+} else {
+  header('Location: thankyou.html');
 }

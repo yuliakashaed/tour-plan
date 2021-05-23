@@ -23,7 +23,7 @@
         </a>
   
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-          <input type="text" class="search__input" placeholder="Search Location">
+          <input required type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
@@ -59,7 +59,7 @@
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible navbar-menu__item--mobile--visible--mb">
                 <form action="#" class="search navbar__search navbar__search--mobile--visible">
-                  <input type="text" class="search__input" placeholder="Search Location">
+                  <input required type="text" class="search__input" placeholder="Search Location">
                   <button class="search__button">
                     <img src="img/search.svg" alt="Icon: search">
                   </button>
@@ -356,7 +356,7 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form class="subscribe newsletter__subscribe" action="send.php" method="POST">
-        <input type="email" class="subscribe__input" placeholder="Your email address" name="email"> 
+        <input required type="email" class="subscribe__input" placeholder="Your email address" name="email"> 
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -596,8 +596,8 @@ quest" class="card__image">
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3 footer__title--mb-1">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <input required type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+            <input required type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <div class="button-wrapper">
               <button class="button footer__button" type="submit">Send</button>
@@ -638,9 +638,9 @@ quest" class="card__image">
       </a>
       <h3 class="modal__title modal__title--mb-3 modal__title--mb-1">Booking</h3>
       <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="email" class="input modal__input" placeholder="Your email address" name="email">
+        <input required type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+        <input required type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+        <input required type="email" class="input modal__input" placeholder="Your email address" name="email">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="button-wrapper modal-button-wrapper">
           <button class="button modal__button" type="submit">Send</button>

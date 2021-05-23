@@ -27,6 +27,14 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
 
 });
 
+
+var backButton = $(".button-back");
+backButton.on("click", function() {
+window.location.href = "index.html";
+});
+
+
+
 var menuButton = $(".menu-button");
 menuButton.on('click', function() {
  $('.navbar-bottom').toggleClass('navbar-bottom--visible');
