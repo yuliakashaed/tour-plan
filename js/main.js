@@ -69,6 +69,52 @@ menuButton.on('click', function() {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  
+
+  //Обработка форм
+  $('.modal__form').validate({
+      errorClass: "invalid",
+      messages: {
+      name: {
+         required: "Please specify your name",
+         minlength: "At least 2 letters required",
+      },
+      email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "We need your phone to contact you",
+      },
+    },
+    
+  });
+
+    $('.footer__form').validate({
+      errorClass: "invalid",
+      messages: {
+      name: {
+         required: "Please specify your name",
+         minlength: "At least 2 letters required",
+      },
+      phone: {
+        required: "We need your phone to contact you",
+      },
+    },
+    
+  });
+
+   $('.newsletter__subscribe').validate({
+      errorClass: "invalid",
+      messages: {
+          email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+      },
+      },
+  });
+
+   $('input[name="phone"]').mask('+7 (999) 999-99-99');
 
 
 });

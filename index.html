@@ -596,8 +596,12 @@ quest" class="card__image">
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3 footer__title--mb-1">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form">
-            <input required type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input required type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <div class="footer__input-group">
+              <input required minlength="2" type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+            </div>
+              <div class="footer__input-group">
+                <input required type="tel" class="input footer__input" placeholder="Phone Number*" name="phone">
+              </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <div class="button-wrapper">
               <button class="button footer__button" type="submit">Send</button>
@@ -638,9 +642,15 @@ quest" class="card__image">
       </a>
       <h3 class="modal__title modal__title--mb-3 modal__title--mb-1">Booking</h3>
       <form action="send.php" method="POST" class="modal__form">
-        <input required type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input required type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input required type="email" class="input modal__input" placeholder="Your email address" name="email">
+        <div class="modal__form-group">
+          <input required minlength="2" type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+        </div>
+        <div class="modal__form-group">
+          <input required type="tel" class="input modal__input" placeholder="Phone Number*" name="phone">
+        </div>
+        <div class="modal__form-group">
+          <input required type="email" class="input modal__input" placeholder="Your email address" name="email">
+        </div>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="button-wrapper modal-button-wrapper">
           <button class="button modal__button" type="submit">Send</button>
@@ -652,6 +662,8 @@ quest" class="card__image">
   </div>
   <!-- /.modal -->
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
