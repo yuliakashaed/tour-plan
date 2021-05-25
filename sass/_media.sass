@@ -129,14 +129,10 @@
   .modal
     &-button-wrapper
       display: flex
-      flex-direction: column-reverse
-      width: auto
-      align-items: flex-start
     &__info
       margin-bottom: 15px
     &__dialog
-      padding: 20px 70px 33px 70px
-      text-decoration: underline
+      padding: 20px 30px 33px 30px
   button:hover
     box-shadow: none
   button:active
@@ -302,7 +298,6 @@
         flex-basis: 100%
   .modal
     &__dialog
-      padding: 20px 50px 33px 50px
       width: 85%
 
 @media (max-width: 576px)
@@ -363,6 +358,8 @@
       width: 100%
     &__input
       flex-basis: 100%
+    &__info
+      margin-bottom: 15px
     &__contact
       &-details
         grid-row: 6
@@ -379,6 +376,13 @@
   .modal
     &__dialog
       padding: 20px 30px 33px 30px
+    &__button
+      margin-top: 0
+  .button-wrapper
+    display: flex
+    flex-direction: column-reverse
+    width: auto
+    align-items: flex-start
 
 @media (max-width: 320px)
   .container
@@ -474,8 +478,7 @@
     &__message
       margin-bottom: 15px
       font-size: 12px
-    &__info
-      margin-bottom: 15px
+
     &__button
       margin-bottom: 27px
     &-additional
@@ -485,9 +488,3 @@
         min-width: 280px
       &__item
         margin-right: 7px
-  .button
-    &-wrapper
-      display: flex
-      flex-direction: column-reverse
-      width: auto
-      align-items: flex-start

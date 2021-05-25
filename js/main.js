@@ -80,8 +80,8 @@ menuButton.on('click', function() {
          minlength: "At least 2 letters required",
       },
       email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+      required: "We need your email address",
+      email: "The format:  name@domain.com",
       },
       phone: {
         required: "We need your phone to contact you",
@@ -108,13 +108,15 @@ menuButton.on('click', function() {
       errorClass: "invalid",
       messages: {
           email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+      required: "We need your email address",
+      email: "The format:  name@domain.com",
       },
       },
   });
 
    $('input[name="phone"]').mask('+7 (999) 999-99-99');
+
+    AOS.init();
 
 
 });

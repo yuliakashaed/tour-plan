@@ -11,6 +11,7 @@
     rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,11 +19,11 @@
   <header class="navbar navbar--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-down">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
   
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form data-aos="fade-down" data-aos-duration="800" action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input required type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
@@ -229,7 +230,7 @@
                   </div>
             </div>
         </div>
-        <div class="package">
+        <div class="package"  data-aos="flip-left" data-aos-duration="500">
           <img src="img/package-2.jpg" alt="Second package" class="package__image">
           <span class="package__flash">Flash Offer</span>
           <div class="package-info">
@@ -257,7 +258,7 @@
             </div>
           </div>
         </div>
-        <div class="package">
+        <div class="package"  data-aos="flip-left" data-aos-duration="1000">
           <img src="img/package-3.jpg" alt="Third package" class="package__image">
           <span class="package__flash">Flash Offer</span>
           <div class="package-info">
@@ -285,7 +286,7 @@
             </div>
           </div>
         </div>
-        <div class="package">
+        <div class="package"  data-aos="flip-left" data-aos-duration="2000">
           <img src="img/package-4.jpg" alt="Forth package" class="package__image">
           <span class="package__flash">Flash Offer</span>
           <div class="package-info">
@@ -313,7 +314,7 @@
             </div>
           </div>
         </div>
-        <div class="package">
+        <div class="package"  data-aos="flip-left" data-aos-duration="3000">
           <img src="img/package-5.jpg" alt="Fifth package" class="package__image">
           <span class="package__flash">Flash Offer</span>
           <div class="package-info">
@@ -353,7 +354,7 @@
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
         subscribe to our
-        <span class="newsletter-title__strong">Newsletter</span>
+        <span data-aos="zoom-in" class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form class="subscribe newsletter__subscribe" action="send.php" method="POST">
         <input required type="email" class="subscribe__input" placeholder="Your email address" name="email"> 
@@ -464,7 +465,7 @@
         Other Activities
       </h2>
       <div class="activities-wrapper">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
           <img src="img/activity-1.jpg" alt="The curious corner 
 of chamarel" class="card__image">
           <h2 class="card__title">The curious corner
@@ -472,7 +473,7 @@ of chamarel" class="card__image">
           <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
             <img src="img/activity-2.jpg" alt="Gymkhana club golf
 course" class="card__image">
             <h2 class="card__title">Gymkhana club golf
@@ -480,7 +481,7 @@ course" class="card__image">
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-            <div class="card activities__card">
+            <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
               <img src="img/activity-3.jpg" alt="Tamarind falls hiking
 trip - full day
 " class="card__image">
@@ -490,7 +491,7 @@ trip - full day
               <button data-toggle="modal" class="card__button">Book Now</button>
             </div>
             <!-- /.card -->
-              <div class="card">
+              <div class="card" data-aos="fade-up" data-aos-delay="500">
                 <img src="img/activity-4.jpg" alt="The blue marine discovery
 quest" class="card__image">
                 <h2 class="card__title card__title--last">The blue marine discovery quest</h2>
@@ -600,7 +601,7 @@ quest" class="card__image">
               <input required minlength="2" type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
             </div>
               <div class="footer__input-group">
-                <input required type="tel" class="input footer__input" placeholder="Phone Number*" name="phone">
+                <input required type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" minlength="11">
               </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <div class="button-wrapper">
@@ -646,7 +647,7 @@ quest" class="card__image">
           <input required minlength="2" type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
         </div>
         <div class="modal__form-group">
-          <input required type="tel" class="input modal__input" placeholder="Phone Number*" name="phone">
+          <input required type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" minlength="11">
         </div>
         <div class="modal__form-group">
           <input required type="email" class="input modal__input" placeholder="Your email address" name="email">
@@ -666,6 +667,7 @@ quest" class="card__image">
   <script src="js/jquery.mask.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
   </body>
   </html>

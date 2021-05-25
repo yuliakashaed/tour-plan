@@ -1515,12 +1515,12 @@ a:hover {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-top: 15px;
 }
 .modal__button {
   margin-top: 15px;
 }
 .modal__info {
+  margin-top: 15px;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -1703,16 +1703,12 @@ a:hover {
 
   .modal-button-wrapper {
     display: flex;
-    flex-direction: column-reverse;
-    width: auto;
-    align-items: flex-start;
   }
   .modal__info {
     margin-bottom: 15px;
   }
   .modal__dialog {
-    padding: 20px 70px 33px 70px;
-    text-decoration: underline;
+    padding: 20px 30px 33px 30px;
   }
 
   button:hover {
@@ -1933,7 +1929,6 @@ a:hover {
   }
 
   .modal__dialog {
-    padding: 20px 50px 33px 50px;
     width: 85%;
   }
 }
@@ -2016,6 +2011,9 @@ a:hover {
   .footer__input {
     flex-basis: 100%;
   }
+  .footer__info {
+    margin-bottom: 15px;
+  }
   .footer__contact-details {
     grid-row: 6;
     grid-column: 1;
@@ -2036,6 +2034,16 @@ a:hover {
 
   .modal__dialog {
     padding: 20px 30px 33px 30px;
+  }
+  .modal__button {
+    margin-top: 0;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    align-items: flex-start;
   }
 }
 @media (max-width: 320px) {
@@ -2166,9 +2174,6 @@ a:hover {
     margin-bottom: 15px;
     font-size: 12px;
   }
-  .footer__info {
-    margin-bottom: 15px;
-  }
   .footer__button {
     margin-bottom: 27px;
   }
@@ -2181,12 +2186,5 @@ a:hover {
   }
   .footer-additional__item {
     margin-right: 7px;
-  }
-
-  .button-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    width: auto;
-    align-items: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */
