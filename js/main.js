@@ -85,6 +85,7 @@ menuButton.on('click', function() {
       },
       phone: {
         required: "We need your phone to contact you",
+        minlength: "Please enter at least 11 characters",
       },
     },
     
@@ -99,6 +100,7 @@ menuButton.on('click', function() {
       },
       phone: {
         required: "We need your phone to contact you",
+        minlength: "Please enter at least 11 characters",
       },
     },
     
