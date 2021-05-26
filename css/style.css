@@ -1386,6 +1386,9 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+.footer__link_red:hover {
+  filter: brightness(100);
+}
 .footer__input {
   width: 100%;
 }
@@ -1722,6 +1725,10 @@ a:hover {
 
   a:hover {
     text-decoration: none;
+  }
+
+  .footer__link_red:hover {
+    filter: brightness(1);
   }
 }
 @media (max-width: 767px) {
